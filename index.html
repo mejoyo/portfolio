@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- 모바일 때문에 -->
     <title>이제열 포트폴리오</title>
+    
+    <!-- 팬시박스 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="css/main.css" rel="stylesheet" />
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- 팬시박스 js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $(function(){
+                //탭메뉴
+                $('.motion ul li').click(function(){
+                    $('.motion ul li').removeClass('on');
+                    $(this).addClass('on')
+    
+                    $('.motion .list_cont').removeClass('on')
+                    $('.motion .list_cont').eq($(this).index()).addClass('on')
+                });//click end
+            });
+        </script>
+
 </head>
 <body>
     <header>
@@ -68,5 +92,235 @@
                 </ul>
         </div><!-- .cont end -->
     </section><!-- .best_v end -->
+
+    <section class="motion">
+        <div class="title">
+            <h3>MOTION GRAPHICS</h3>
+            <p>모션 그래픽 애니메이션 기술을 활용한 영상제작</p>
+        </div><!-- .title end -->
+        <ul class="list">
+            <li class="on">게임</li>
+            <li>홍보영상</li>
+            <li>인포그래픽</li>
+            <li>브이로그</li>
+            <li>뮤비티저</li>
+        </ul> <!-- .list end -->
+        <div class="motion_cont">
+            <div class="list_cont on"> <!-- 게임 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-gXtC_lFIhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div> <!-- .youtube_in end -->
+                    </div> <!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>사람이 사랑하면 안돼요</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:04:02</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>준호준-사람이 사랑하면 안돼요</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=-gXtC_lFIhU">https://www.youtube.com/watch?v=-gXtC_lFIhU</a></dd>
+                        </dl>
+                    </div> <!-- .info end -->
+                </div> <!-- .items end 1 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5cvg1qPoOXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div> <!-- .youtube_in end -->
+                    </div> <!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>좋은 밤 좋은 꿈</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:04:17</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>너드커넥션 - 좋은 밤 좋은 꿈</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=5cvg1qPoOXM">https://www.youtube.com/watch?v=5cvg1qPoOXM</a></dd>
+                        </dl>
+                    </div> <!-- .info end -->
+                </div> <!-- .items end 2 -->
+                
+            </div> <!-- .list_cont end 게임 -->
+
+            <div class="list_cont"> <!-- 홍보영상 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JK6p6OPS9mc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div> <!-- .youtube_in end -->
+                    </div> <!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>그대의 꿈결</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:04:51</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>신해경 - 그대의 꿈결</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=JK6p6OPS9mc&list=RDMM&index=6">https://www.youtube.com/watch?v=JK6p6OPS9mc&list=RDMM&index=6</a></dd>
+                        </dl>
+                    </div> <!-- .info end -->
+                </div> <!-- .items end 1 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/p1qD8bSgW1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div> <!-- .youtube_in end -->
+                    </div> <!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>피와 갈증 (검정치마cover)</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:06:55</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>피와 갈증 (검정치마cover)</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=p1qD8bSgW1U">https://www.youtube.com/watch?v=p1qD8bSgW1U</a></dd>
+                        </dl>
+                    </div> <!-- .info end -->
+                </div> <!-- .items end 2 -->
+
+            </div> <!-- .list_cont end 홍보영상 -->
+        </div> <!-- .motion_cont end -->
+    </section><!-- motion end -->
+
+    <section class="g_ver05">
+        <div class="title">
+            <h3>GRAPHIC DESIGN</h3>
+            <P>디자인프로그램을 사용하여 만든 그래픽 디자인</P>
+            <em>클릭하시면 원본이미지를 보실 수 있습니다.</em>
+        </div><!-- .title end -->
+        <div class="cont">
+            <a class="items" href="http://via.placeholder.com/300x500" data-fancybox="images">
+                <figure>
+                    <img src="http://via.placeholder.com/300x500/333/?text=image" alt="공백" />
+                </figure>
+                <div class="info">
+                    <p>#보정 / 포토샵</p>
+                    <h4>제작된 이미지 제목</h4>
+                </div><!-- .info end -->
+            </a><!-- .items end 1 -->
+
+            <a class="items" href="images/coffee02.jpg" data-fancybox="images">
+                <figure>
+                    <img src="images/coffee02.jpg" alt="공백" />
+                </figure>
+                <div class="info">
+                    <p>#보정2 / 포토샵2</p>
+                    <h4>제작된 이미지 제목</h4>
+                </div><!-- .info end -->
+            </a><!-- .items end 2 -->
+
+        </div><!-- .cont end -->
+
+    </section><!-- .g_ver05 end -->
+
+    <section class="about">
+        <div class="cont">
+            <figure>
+                <img src="http://via.placeholder.com/450x500/?text=image" alt="내얼굴" />
+            </figure>
+            <div class="info">
+                <div>
+                    <h4>PROFILE</h4>
+                    <p>이름 / NAME</p>
+                    <p>1988.03.30</p>
+                    <p><a href="tel:010-4284-0739">010-4284-0739</a></p>
+                    <p>부산광역시 부산진구</p>
+                </div>
+                <div>
+                    <h4>EDUCATION</h4>
+                    <dl>
+                        <dt>2021.12 ~ 2022.05 </dt>
+                        <dd>그린컴퓨터아카데미<br>
+                        [멀티미디어콘텐츠제작]영상편집 수료</dd>
+                    </dl>
+                </div>
+                <div>
+                    <h4>LISENCE</h4>
+                    <dl>
+                        <dt>2020.00</dt>
+                        <dd>자격증 이름</dd>
+                    </dl>
+                    <dl>
+                        <dt>2020.01</dt>
+                        <dd>자격증 이름2</dd>
+                    </dl>
+                </div>
+                <div>
+                    <h4>SKILL</h4>
+                    <p>영상촬영</p>
+                    <p>프리미어 프로, 에프터이펙트</p>
+                    <p>포토샵, 일러스트레이터, XD, 인디자인</p>
+                    <p>마야, 스케치업, 캐드, 3D-MAX</p>
+                    <p>HTML, CSS</p>
+                </div>
+            </div><!-- .info end -->
+        </div><!-- .cont end -->
+    </section><!-- .about end -->
+    <footer>
+        <h3>이제열 JAYLEE</h3>
+        <ul>
+            <li><a href="#">유튜브채널</a></li>
+            <li><a href="tel:010-4284-0739">010.4284.0739</a></li>
+            <li>mejoyo@naver.com</li>
+            <li>카카오 아이디 : mejoyo</li>
+        </ul>
+        <p>Copyrightⓒ2022 이제열 All rights reserved.<br>
+            본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. <br>
+            사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
+    </footer>
 </body>
 </html>
