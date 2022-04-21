@@ -436,7 +436,7 @@ footer p {
     .motion .list li {
         margin-bottom: 10px;
     }
-    .motion .motion_cont .list_cont .on {
+    .motion .motion_cont .list_cont.on {
         flex-wrap: wrap;
     }
     .motion .motion_cont .list_cont .items {
