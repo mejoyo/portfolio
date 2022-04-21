@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 모바일 때문에 -->
     <title>이제열 포트폴리오</title>
-    
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- 팬시박스 css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="css/main.css" rel="stylesheet" />
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+        <!-- animate.css -->
         <!-- 팬시박스 js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- aos js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script>
             $(function(){
@@ -27,6 +35,7 @@
                     $('.motion .list_cont').removeClass('on')
                     $('.motion .list_cont').eq($(this).index()).addClass('on')
                 });//click end
+                AOS.init();
             });
         </script>
 
@@ -45,9 +54,11 @@
             <img src="https://via.placeholder.com/1920x1000/333/333/?text=image" />
         </figure>
         <div class="title">
-            <h2>MOTION GRAPHIC DESIGNER</h2>
-            <p>JAY LEE</p>
-            <a href="#">유튜브채널</a>
+            <div class="animate__animated animate__pulse">
+                <h2>MOTION GRAPHIC DESIGNER</h2>
+                <p>JAY LEE</p>
+                <a href="#">유튜브채널</a>
+            </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
 
@@ -57,7 +68,7 @@
             <p>내가 뽑은 베스트 작품</p>
         </div><!-- .title end -->
         <div class="cont">
-            <div class="youtube">
+            <div class="youtube" data-aos="fade-left">
                 <div class="youtube_in">
                     <!-- 유튜브 연결 -->
                     
@@ -65,7 +76,7 @@
 
                 </div><!-- .youtube_in end -->
             </div><!-- .youtube end -->
-            <div class="info">
+            <div class="info" data-aos="fade-right">
                 <strong>#브이로그</strong>
                 <h4>영상제목 넣기</h4>
                 <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
