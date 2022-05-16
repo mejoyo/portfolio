@@ -66,9 +66,9 @@ header div a {
     height: 720px;
     font-size: 16px;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-image: url("../images/main.png");
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    background-image: url("../images/main_03.png");
     background-position: center;
     background-size: cover;
 }
@@ -955,6 +955,10 @@ text-align: center;
         /* background-color: #FFFFFF;
         color: #000000; */
         margin-top: 0;
+        box-shadow: 3px 3px 6px #000000b3;
+        border: 2px solid #707070;
+        border-radius: 30px;
+        opacity: 1;
     }
 
     .about .cont .info div {
