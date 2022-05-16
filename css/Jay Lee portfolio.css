@@ -102,6 +102,7 @@ header div a {
 .tag li {
     border: 1px solid #C4C4C4;
     height: 28px;
+    line-height: 28px;
     padding: 0 12px;
     margin: 0 5px;
 
@@ -287,11 +288,12 @@ text-align: center;
     justify-content: space-between;
   }
 
-  .list_cont.on .list_items a {
+  /* .list_cont.on .list_items {
     width: 32%;
-}
+} */
 
-  .list_cont.on .list_items a img {
+  .list_cont.on .list_items img {
+    display: inline-block;
     width: 95%;
     height: 100%;
     box-shadow: 3px 3px 6px #000000B3;
@@ -299,6 +301,20 @@ text-align: center;
     border-radius: 4px;
     opacity: 1;
     }
+
+    .list_cont.on .list_items img:hover{
+        animation: pulsate 1s ease-in-out;
+    }
+
+    @keyframes pulsate {
+        0%{
+            box-shadow:
+            0 0 25px #5ddcff,
+            0 0 25px #4e00c2;
+        }
+    }
+
+    
 
  
 
@@ -544,9 +560,54 @@ text-align: center;
         display: flex;
          /* 한줄일 때 수직정렬 : 가운데 */
         align-items: center;
-      }
+        width: 300px;
+    }
+
+    .design_cont .list_cont .art_items figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    } 
+
+    .design_cont .list_cont .art_items figure img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.8s;
+    }
+
+    .card-image {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.8s;
+    }
+
+    .design_cont .list_cont .art_items figure:hover .card-image {
+        transform: scale(1.5);
+  
+    }
 
 
+
+      /* 
+      figure {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+} */
+
+
+      /* 
+      figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+} */
+      
 
     /* about */
 
@@ -704,6 +765,7 @@ text-align: center;
     }
     .design_cont .list_cont.on a img{
         width: 95%;
+        height: 95%;
         box-shadow: 3px 3px 6px #000000B3;
         border: 1px solid #707070;
         border-radius: 4px;
@@ -812,6 +874,7 @@ text-align: center;
 
     .vimeo_in .text {
         margin-bottom: 20px;
+        margin-top: 0px;
     }
     
     .video .list li,
@@ -888,9 +951,9 @@ text-align: center;
     }
 
     .about .cont .info {
-        background-image: none;
-        background-color: #FFFFFF;
-        color: #000000;
+        background-image: url(/portfolio/images/profile_05.png);
+        /* background-color: #FFFFFF;
+        color: #000000; */
         margin-top: 0;
     }
 
@@ -902,6 +965,7 @@ text-align: center;
         font-size: 12px;
         letter-spacing: -0.6px;
     }
+
 
 
     
@@ -922,11 +986,11 @@ text-align: center;
         display: none;
     }
 
-    .main_vimeo .vimeo_link {
+    .main_vimeo .vimeo_link_2 {
         display: none;
     }
     
-    .main_vimeo .vimeo_link iframe {
+    .main_vimeo .vimeo_link_2 iframe {
         display: none;
     }
     
