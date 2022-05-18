@@ -561,6 +561,7 @@ text-align: center;
          /* 한줄일 때 수직정렬 : 가운데 */
         align-items: center;
         width: 300px;
+        height: 300px;
     }
 
     .design_cont .list_cont .art_items figure {
@@ -762,6 +763,7 @@ text-align: center;
 
     .design_cont .list_cont.on a{
         width: 33.3%;
+        height: 33vw;
     }
     .design_cont .list_cont.on a img{
         width: 95%;
